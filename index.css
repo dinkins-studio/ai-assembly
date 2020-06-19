@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "ch-medium";
+    src: url("assets/font/CooperHewitt-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ch-book";
+    src: url("assets/font/CooperHewitt-Book.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 56.25%;
+}
+
+body {
+    margin: 0 auto;
+    width: 85%;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    font-family: ch-book, Arial, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 4rem;
+}
+
+.header {
+    display: flex;
+    /* flex-wrap: wrap; */ /* mobile */
+}
+
+.header-top {
+    width: 50vw;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+h1.logo {
+    padding-top: 1.5%;
+    font-family: ch-medium, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+h1.info {
+    font-family: Times, serif;
+    font-size: 2.75rem;
+    line-height: 2.758rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 2.5%;
+    width: 55%;
+}
+
+p.info {
+    font-family: ch-book, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 2.5rem;
+    width: 85%;
+    margin-bottom: 0.75%;
+}
+
+h2 {
+    font-family: ch-book, Helvetica, sans-serif;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h2.bottom-logo {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+h2.question {
+    font-family: Times, serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2.25rem;
+}
+
+h2.question:hover {
+    font-style: normal;
+    transition: 2s;
+}
+
+h2.table-item {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-size: 2rem;
+}
+
+h2.table-item2 {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-size: 2rem;
+}
+
+.work-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-table2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2.5%;
+}
+
+.table-item {
+    flex: 0 0 27%;
+    /* flex: 0 0 21%; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.table-item2 {
+    flex: 0 0 27%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.table-item3 {
+    flex: 0 0 21%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+p.table-item {
+    height: auto;
+    vertical-align: text-top;
+    border-top: 1px solid white;
+}
+
+p.table-item3 {
+    width: 100%;
+    height: auto;
+    vertical-align: text-top;
+}
+
+.small {
+    flex-grow: 0;
+}
+
+.med {
+    flex-grow: 1;
+}
+
+.big {
+    flex-grow: 4;
+}
+
+.nav {
+    font-family: Times, serif;
+    font-size: 100%;
+    line-height: 3.5rem;
+}
+
+a.nav, a:active.nav, a:visited.nav {
+    color: white;
+}
+
+a.nav:hover {
+    color: saddlebrown;
+}
+
+a:visited {
+    color: white;
+}
+
+a.link::after {
+    /* content: " \FFEB"; */
+}
+
+a:link, a:active {
+    color: white;
+    cursor: help;
+    text-decoration: none;
+}
+
+a:hover {
+    color: saddlebrown;
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5%;
+    justify-content: space-between;
+}
+
+footer {
+    position: fixed;
+    bottom: 1%;
+    width: inherit;
+    z-index: -1;
+}
+
+ul.nav li {
+    display: inline;
+    font-size: 45px;
+}
+
+mark.unicode {
+    font-family: sans-serif;
+    /* font-size: 2.5rem; */
+    color: white;
+    background-color: transparent;
+}
+
+mark.unicode::before {
+    content: " ";
+}
