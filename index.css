@@ -39,7 +39,6 @@ body {
 
 .header {
     display: flex;
-    /* flex-wrap: wrap; */ /* mobile */
 }
 
 .header-top {
@@ -162,9 +161,10 @@ p.table-item3 {
     flex-grow: 0;
 }
 
-.med {
+.med, .med2 {
     flex-grow: 1;
 }
+
 
 .big {
     flex-grow: 4;
@@ -230,4 +230,74 @@ mark.unicode {
 
 mark.unicode::before {
     content: " ";
+}
+
+@media only screen and (max-width:800px) {
+
+    body {
+        font-size: 1.75rem;
+        font-weight: normal;
+        letter-spacing: 0.03em;
+        line-height: 2.25rem;
+    }
+
+    .header {
+        flex-wrap: wrap; 
+    }
+
+    .header-top {
+        width: 50vw;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    mark.unicode {
+        display: none;
+    }
+
+    .med {
+        display: none;
+        visibility: hidden;
+    }
+
+    .work-table {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .work-table2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2.5%;
+    }
+    
+    .table-item {
+        flex: 0 0 50%;
+        flex-wrap: wrap;
+    }
+
+    .table-item2 {
+        flex: 0 0 30%;
+    }
+    
+    .table-item3 {
+        flex: 0 0 100%;
+    }
+
+    h1.info {
+        font-size: 2rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+
+    p.info {
+        line-height: 2rem;
+    }
+
+    footer {
+        display: none;
+        visibility: hidden;
+    }
+    
+
 }
