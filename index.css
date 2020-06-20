@@ -31,7 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: ch-book, Arial, Helvetica, sans-serif;
-    font-size: 2.25rem;
+    font-size: 2.125rem;
     font-weight: normal;
     letter-spacing: 0.03em;
     line-height: 4rem;
@@ -121,7 +121,6 @@ h2.table-item2 {
 
 .table-item {
     flex: 0 0 27%;
-    /* flex: 0 0 21%; */
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     align-content: flex-start;
@@ -153,7 +152,6 @@ p.table-item {
     height: auto;
     vertical-align: text-top;
     border-top: 1px solid white;
-    z-index: 99;
 }
 
 p.table-item3 {
@@ -169,7 +167,6 @@ p.table-item3 {
 .med, .med2 {
     flex-grow: 1;
 }
-
 
 .big {
     flex-grow: 4;
@@ -207,6 +204,40 @@ a:hover {
     color: saddlebrown;
 }
 
+.hide-n-seek a {
+    position: relative;
+    display: inline-block;
+}
+
+.hide-n-seek a span {
+    position: absolute;
+    display: none;
+    z-index: 10000;
+}
+
+.hide-n-seek a:hover span {
+    display: block;
+}
+
+.hide-n-seek img {
+    z-index: 10000;
+    position: fixed;
+    bottom: 30%;
+    left: 3%;
+    max-height: 45%;
+    max-width: 50%;
+    background: black;
+    padding: 0.5%;
+    transform: rotate(-3deg);
+}
+
+.filter {
+    mix-blend-mode: screen;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    /* background-color: white; */
+}
+
 .bottom {
     display: flex;
     align-items: flex-start;
@@ -225,7 +256,7 @@ footer {
     background: transparent url('assets/gradient.png') repeat-x center center;
     height: 120px;
     position: fixed;
-    z-index: 100;
+    z-index: 5000;
 }
 
 ul.nav li {
@@ -245,81 +276,64 @@ mark.unicode::before {
 }
 
 @media only screen and (max-width:800px) {
-
     body {
         font-size: 1.75rem;
         font-weight: normal;
         letter-spacing: 0.03em;
         line-height: 2.25rem;
     }
-
     .header {
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         position: static;
     }
-
     .header-top {
         position: static;
         width: 50vw;
         margin-top: 10%;
         margin-bottom: 5%;
     }
-
     mark.unicode {
         display: none;
     }
-
     .med {
         display: none;
         visibility: hidden;
     }
-
     .work-table {
         display: flex;
         flex-wrap: wrap;
     }
-    
     .work-table2 {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 2.5%;
     }
-    
     .table-item {
         flex: 0 0 50%;
         flex-wrap: wrap;
     }
-
     .table-item2 {
         flex: 0 0 30%;
     }
-    
     .table-item3 {
         flex: 0 0 100%;
     }
-
     h1.info {
         font-size: 2rem;
         line-height: 2rem;
         width: 100%;
     }
-
     p.info {
         line-height: 2rem;
     }
-
     h2.question {
         font-size: 2rem;
     }
-
     h2.bottom-logo {
         display: none;
     }
-
     .gradient {
         height: 70px;
     }
-    
-
 }
