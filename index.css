@@ -86,13 +86,12 @@ h2.bottom-logo {
 
 h2.question {
     font-family: Times, serif;
-    font-style: italic;
     font-weight: normal;
     font-size: 2.25rem;
 }
 
 h2.question:hover {
-    font-style: normal;
+    font-style: italic;
     transition: 2s;
 }
 
@@ -111,6 +110,7 @@ h2.table-item2 {
 .work-table {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .work-table2 {
@@ -126,6 +126,10 @@ h2.table-item2 {
     padding-bottom: 0.5rem;
     align-content: flex-start;
     width: 100%;
+}
+
+p.table-item:last-of-type {
+    margin-bottom: 20rem;
 }
 
 .table-item2 {
@@ -149,6 +153,7 @@ p.table-item {
     height: auto;
     vertical-align: text-top;
     border-top: 1px solid white;
+    z-index: 99;
 }
 
 p.table-item3 {
@@ -211,9 +216,16 @@ a:hover {
 
 footer {
     position: fixed;
-    bottom: 1%;
+    bottom: 0%;
     width: inherit;
     z-index: -1;
+}
+
+.gradient {
+    background: transparent url('assets/gradient.png') repeat-x center center;
+    height: 120px;
+    position: fixed;
+    z-index: 100;
 }
 
 ul.nav li {
@@ -244,10 +256,11 @@ mark.unicode::before {
     .header {
         display: flex;
         flex-wrap: wrap; 
-        position: relative;
+        position: static;
     }
 
     .header-top {
+        position: static;
         width: 50vw;
         margin-top: 10%;
         margin-bottom: 5%;
@@ -296,9 +309,16 @@ mark.unicode::before {
         line-height: 2rem;
     }
 
-    footer {
+    h2.question {
+        font-size: 2rem;
+    }
+
+    h2.bottom-logo {
         display: none;
-        visibility: hidden;
+    }
+
+    .gradient {
+        height: 70px;
     }
     
 
