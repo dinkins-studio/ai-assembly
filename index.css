@@ -276,7 +276,7 @@ ul.nav li {
 
 @media only screen and (max-width:800px) {
     body {
-        font-size: 1.75rem;
+        font-size: 2rem;
         font-weight: normal;
         letter-spacing: 0.03em;
         line-height: 2.25rem;
@@ -292,8 +292,16 @@ ul.nav li {
         margin-top: 10%;
         margin-bottom: 5%;
     }
-    mark.unicode {
-        display: none;
+    .nav {
+        font-family: babe, Helvetica, sans-serif;
+        font-size: 60%;
+        line-height: 1.5rem;
+    }
+    a.nav::after {
+        content: "";
+    }
+    a.nav:active::after, a.nav:hover::after {
+        content: "";
     }
     .med {
         display: none;
