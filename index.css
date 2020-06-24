@@ -296,6 +296,7 @@ ul.nav li {
         font-family: babe, Helvetica, sans-serif;
         font-size: 60%;
         line-height: 1.5rem;
+        position: static;
     }
     a.nav::after {
         content: "";
