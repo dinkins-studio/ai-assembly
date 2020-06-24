@@ -31,10 +31,10 @@ body {
     display: flex;
     flex-direction: column;
     font-family: babe, Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: normal;
     letter-spacing: 0.03em;
-    line-height: 2.25rem;
+    line-height: 2.5rem;
 }
 
 .header {
@@ -57,7 +57,7 @@ h1.logo {
 h1.info {
     font-family: Helvetica, sans-serif;
     font-size: 2.75rem;
-    line-height: 2.275rem;
+    line-height: 2.5rem;
     font-weight: normal;
     text-transform: uppercase;
     margin-bottom: 2.5%;
@@ -121,14 +121,14 @@ h2.table-item2 {
 
 .table-item {
     flex: 0 0 27%;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     align-content: flex-start;
     width: 100%;
 }
 
 p.table-item {
-    padding-top: .75rem;
+    padding-top: 0.75rem;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
 }
