@@ -52,6 +52,7 @@ h1.logo {
     font-family: lincoln, Helvetica, sans-serif;
     font-size: 5.5rem;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 h1.info {
@@ -284,7 +285,6 @@ ul.nav li {
     .header {
         display: flex;
         flex-wrap: wrap;
-        position: static;
     }
     .header-top {
         position: static;
@@ -296,7 +296,7 @@ ul.nav li {
         font-family: babe, Helvetica, sans-serif;
         font-size: 60%;
         line-height: 1.5rem;
-        position: static;
+        position: relative;
     }
     a.nav::after {
         content: "";
