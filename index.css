@@ -285,22 +285,16 @@ canvas {
         letter-spacing: 0.03em;
         line-height: 2.25rem;
     }
+
     .header {
         display: flex;
-        flex-wrap: wrap;
-    }
-    .header-top {
-        display: flex;
-        padding-top: 5%;
-        position: relative;
+        flex-direction: column;
     }
 
     .nav {
-        display: none;
         font-size: 60%;
         line-height: 1.5rem;
-        max-height: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 5px;
     }
 
     a.nav::after {
@@ -313,18 +307,9 @@ canvas {
         display: none;
         visibility: hidden;
     }
-    .work-table {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .work-table2 {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 2.5%;
-    }
 
     .labels {
-        margin-top: 20%;
+        margin-top: 5%;
     }
 
     .table-item {
