@@ -232,7 +232,6 @@ a:hover {
     left: 3%;
     max-height: 45%;
     max-width: 50%;
-    background: black;
     border: 1px solid white;
     padding: 0.5%;
 }
@@ -294,7 +293,7 @@ canvas {
         position: static;
         width: 50vw;
         margin-top: 10%;
-        margin-bottom: 5%;
+        margin-bottom: 20%;
     }
     .nav {
         font-family: babe, Helvetica, sans-serif;
