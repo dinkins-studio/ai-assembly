@@ -293,7 +293,7 @@ canvas {
         position: static;
         width: 50vw;
         margin-top: 10%;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     }
     .nav {
         font-family: babe, Helvetica, sans-serif;
@@ -320,6 +320,11 @@ canvas {
         flex-wrap: wrap;
         margin-bottom: 2.5%;
     }
+
+    .labels {
+        margin-top: 20%;
+    }
+
     .table-item {
         flex: 0 0 50%;
         flex-wrap: wrap;
