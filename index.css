@@ -290,11 +290,23 @@ canvas {
         flex-wrap: wrap;
     }
     .header-top {
-        position: static;
-        width: 50vw;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        display: flex;
+        padding-top: 5%;
+        position: relative;
+        bottom: auto;
     }
+
+/* 
+    .bottom {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 5%;
+        justify-content: space-between;
+        height: 130px;
+    } */
+    
+
+
     .nav {
         font-family: babe, Helvetica, sans-serif;
         font-size: 60%;
