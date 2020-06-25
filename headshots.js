@@ -1,3 +1,5 @@
+new p5()
+
 let names;
 let xspeeds = [];
 let yspeeds = [];
@@ -42,7 +44,7 @@ function draw() {
 
     for (let i = 0; i < headshots.length; i += 1) {
         let pos = headshots[i].position();
-        if (pos.x > width) {
+        if (pos.x > windowWidth) {
             xspeeds[i] *= -1;
         }
         headshots[i].position(pos.x + xspeeds[i], pos.y + yspeeds[i]);
