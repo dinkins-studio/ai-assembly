@@ -292,6 +292,7 @@ canvas {
     }
 
     .nav {
+        display: none;
         font-size: 60%;
         line-height: 1.5rem;
         margin-bottom: 5px;
