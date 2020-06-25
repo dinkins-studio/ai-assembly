@@ -185,17 +185,10 @@ p.table-item3 {
     line-height: 3.5rem;
 }
 
-a.nav, a:active.nav, a:visited.nav {
+a.nav, a:active.nav, a:visited.nav, a:visited {
     color: white;
 }
 
-a.nav:hover {
-    color: saddlebrown;
-}
-
-a:visited {
-    color: white;
-}
 
 a.nav::after {
     content: " \25A1";
