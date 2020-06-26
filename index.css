@@ -39,7 +39,7 @@ body {
     flex-direction: column;
 }
 
-#assembly, #assembly-headshots {
+#assembly-headshots {
     overflow: hidden;
 }
 
