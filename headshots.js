@@ -3,6 +3,9 @@ new p5()
 let names;
 let xspeeds = [];
 let yspeeds = [];
+let div_width;
+let div_height;
+
 
 function preload() {
     names = loadStrings('names.txt');
@@ -11,8 +14,8 @@ function preload() {
 
 function setup() {
 
-    let div_width = document.getElementById('assembly').offsetWidth;
-    let div_height = document.getElementById('assembly').offsetHeight;
+    div_width = document.getElementById('assembly').offsetWidth;
+    div_height = document.getElementById('assembly').offsetHeight;
 
     let canvas = createCanvas(div_width, div_height);
     canvas.parent("assembly");
